@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Мои поездки</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+  </head>
+
+  <body>
+    <div class="container-wrapper">
+      <header class="header">
+        <a class="header__link header__link--current" href="#">Поездки</a>
+        <div class="header__wrap">
+          <a class="header__user" href="#">Заболоцкий К.О
+            <svg width="16" height="16">
+              <use href="images/sprite.svg#icon-user"></use>
+            </svg>
+          </a>
+        </div>
+      </header>
+      <main class="main">
+        <section class="filters">
+          <div class="filters__subject">
+            <h1 class="filters__title">Мои поездки</h1>
+            <button class="filters__button">
+              <span>+</span>
+              Оформить поездку
+            </button>
+          </div>
+          <div class="filters__wrapper">
+            <div class="filters__period">
+              <div class="filters__data">
+                <label class="filters__label" for="trip-start-date">Период с:</label>
+                <div class="form__input-wrapper">
+                  <input type="text" class="form__input form__input--date" id="trip-start-date"
+                    placeholder="22.02.2024">
+                  <div class="form__input-icons">
+                    <button class="form__input-icon form__input-icon--clear" type="button">X</button>
+                    <button class="form__input-icon form__input-icon--picker" type="button">
+                      <svg width="16" height="16">
+                        <use xlink:href="images/sprite.svg#icon-calendar"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="filters__select-wrap">
+                <label class="filters__label" for="trip-end-date">по:</label>
+                <div class="form__input-wrapper">
+                  <select class="form__select">
+                    <option>Выбрать...</option>
+                  </select>
+                  <svg class="form__select-icon" width="16" height="16">
+                    <use xlink:href="images/sprite.svg#icon-calendar"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="filters__search search">
+              <input type="text" class="form__input" placeholder="Поиск...">
+              <svg class="search__input-icon" width="16" height="16">
+                <use xlink:href="images/sprite.svg#icon-search"></use>
+              </svg>
+            </div>
+            <button class="filters__reset" type="button">
+              <span>X</span>
+              Сбросить все</button>
+            <label class="filters__label-checkbox" for="owner-checkbox">
+              <input class="filters__input-checkbox" type="checkbox" id="owner-checkbox" name="owner-checkbox">
+              <span>Показать архивные поездки</span>
+            </label>
+          </div>
+        </section>
+        <section class="trip__wrap">
+          <div class="trip__row">
+            <dl class="trip__item">
+              <dt class="trip__item-label">№ поездки</dt>
+              <dd class="trip__item-data trip__item-data--first">000115</dd>
+            </dl>
+            <dl class="trip__item trip__item--date">
+              <dt class="trip__item-label">Дата поездки</dt>
+              <dd class="trip__item-data">22.02.2024 - 27.02.2024</dd>
+            </dl>
+            <dl class="trip__item trip__item--amount">
+              <dt class="trip__item-label">Сумма, план</dt>
+              <dd class="trip__item-data">29 400,00</dd>
+            </dl>
+            <dl class="trip__item">
+              <dt class="trip__item-label">Сумма, факт</dt>
+              <dd class="trip__item-data">29 400,00</dd>
+            </dl>
+            <dl class="trip__item">
+              <dt class="trip__item-label">Город</dt>
+              <dd class="trip__item-data">Москва, Ярославль, Ижевск, Владимир</dd>
+            </dl>
+            <dl class="trip__item trip__item--last">
+              <dt class="trip__item-label">Статус</dt>
+              <dd class="trip__item-data">Документы</dd>
+            </dl>
+          </div>
+          <div class="trip__row">
+            <dl class="trip__item">
+              <dt class="trip__item-label">№ поездки</dt>
+              <dd class="trip__item-data trip__item-data--first">000117</dd>
+            </dl>
+            <dl class="trip__item trip__item--date">
+              <dt class="trip__item-label">Дата поездки</dt>
+              <dd class="trip__item-data">22.02.2024 - 27.02.2024</dd>
+            </dl>
+            <dl class="trip__item trip__item--amount">
+              <dt class="trip__item-label">Сумма, план</dt>
+              <dd class="trip__item-data">29 400,00</dd>
+            </dl>
+            <dl class="trip__item">
+              <dt class="trip__item-label">Сумма, факт</dt>
+              <dd class="trip__item-data">29 400,00</dd>
+            </dl>
+            <dl class="trip__item">
+              <dt class="trip__item-label">Город</dt>
+              <dd class="trip__item-data">Москва</dd>
+            </dl>
+            <dl class="trip__item trip__item--last">
+              <dt class="trip__item-label">Статус</dt>
+              <dd class="trip__item-data">Документы</dd>
+            </dl>
+          </div>
+          <div class="trip__row">
+            <dl class="trip__item">
+              <dt class="trip__item-label">№ поездки</dt>
+              <dd class="trip__item-data trip__item-data--first">000074</dd>
+            </dl>
+            <dl class="trip__item trip__item--date">
+              <dt class="trip__item-label">Дата поездки</dt>
+              <dd class="trip__item-data">22.02.2024 - 27.02.2024</dd>
+            </dl>
+            <dl class="trip__item trip__item--amount">
+              <dt class="trip__item-label">Сумма, план</dt>
+              <dd class="trip__item-data">29 400,00</dd>
+            </dl>
+            <dl class="trip__item">
+              <dt class="trip__item-label">Сумма, факт</dt>
+              <dd class="trip__item-data">29 400,00</dd>
+            </dl>
+            <dl class="trip__item">
+              <dt class="trip__item-label">Город</dt>
+              <dd class="trip__item-data has-tooltip"
+                title="Кременчуг-Константиновское, Петропавловск-Камчатский, Новосибирск, Волгоград, Саратов">
+                <span class="text-container">Кременчуг-Константиновское, Петропавловск-Камчатский, Новосибирск,
+                  Волгоград,
+                  Саратов</span>
+                <span class="tooltip-icon">
+                  <svg width="16" height="16">
+                    <use xlink:href="images/sprite.svg#icon-hint"></use>
+                  </svg>
+                </span>
+              </dd>
+            </dl>
+            <dl class="trip__item trip__item--last">
+              <dt class="trip__item-label">Статус</dt>
+              <dd class="trip__item-data">Документы</dd>
+            </dl>
+          </div>
+          <div class="trip__row">
+            <dl class="trip__item">
+              <dt class="trip__item-label">№ поездки</dt>
+              <dd class="trip__item-data trip__item-data--first">000115</dd>
+            </dl>
+            <dl class="trip__item trip__item--date">
+              <dt class="trip__item-label">Дата поездки</dt>
+              <dd class="trip__item-data">22.02.2024 - 27.02.2024</dd>
+            </dl>
+            <dl class="trip__item trip__item--amount">
+              <dt class="trip__item-label">Сумма, план</dt>
+              <dd class="trip__item-data">29 400,00</dd>
+            </dl>
+            <dl class="trip__item">
+              <dt class="trip__item-label">Сумма, факт</dt>
+              <dd class="trip__item-data">29 400,00</dd>
+            </dl>
+            <dl class="trip__item">
+              <dt class="trip__item-label">Город</dt>
+              <dd class="trip__item-data">Москва, Ярославль, Ижевск, Владимир</dd>
+            </dl>
+            <dl class="trip__item trip__item--last">
+              <dt class="trip__item-label">Статус</dt>
+              <dd class="trip__item-data">Документы</dd>
+            </dl>
+          </div>
+          <div class="trip__row">
+            <dl class="trip__item">
+              <dt class="trip__item-label">№ поездки</dt>
+              <dd class="trip__item-data trip__item-data--first">000211</dd>
+            </dl>
+            <dl class="trip__item trip__item--date">
+              <dt class="trip__item-label">Дата поездки</dt>
+              <dd class="trip__item-data">22.02.2024 - 27.02.2024</dd>
+            </dl>
+            <dl class="trip__item trip__item--amount">
+              <dt class="trip__item-label">Сумма, план</dt>
+              <dd class="trip__item-data">29 400,00</dd>
+            </dl>
+            <dl class="trip__item">
+              <dt class="trip__item-label">Сумма, факт</dt>
+              <dd class="trip__item-data">29 400,00</dd>
+            </dl>
+            <dl class="trip__item">
+              <dt class="trip__item-label">Город</dt>
+              <dd class="trip__item-data">Москва, Ярославль, Ижевск, Владимир</dd>
+            </dl>
+            <dl class="trip__item trip__item--last">
+              <dt class="trip__item-label">Статус</dt>
+              <dd class="trip__item-data">Документы</dd>
+            </dl>
+          </div>
+          <div class="trip__row">
+            <dl class="trip__item">
+              <dt class="trip__item-label">№ поездки</dt>
+              <dd class="trip__item-data trip__item-data--first">000118</dd>
+            </dl>
+            <dl class="trip__item trip__item--date">
+              <dt class="trip__item-label">Дата поездки</dt>
+              <dd class="trip__item-data">22.02.2024 - 27.02.2024</dd>
+            </dl>
+            <dl class="trip__item trip__item--amount">
+              <dt class="trip__item-label">Сумма, план</dt>
+              <dd class="trip__item-data">29 400,00</dd>
+            </dl>
+            <dl class="trip__item">
+              <dt class="trip__item-label">Сумма, факт</dt>
+              <dd class="trip__item-data">29 400,00</dd>
+            </dl>
+            <dl class="trip__item">
+              <dt class="trip__item-label">Город</dt>
+              <dd class="trip__item-data">Москва, Ярославль, Ижевск, Владимир</dd>
+            </dl>
+            <dl class="trip__item trip__item--last">
+              <dt class="trip__item-label">Статус</dt>
+              <dd class="trip__item-data">Документы</dd>
+            </dl>
+          </div>
+          <div class="trip__row">
+            <dl class="trip__item">
+              <dt class="trip__item-label">№ поездки</dt>
+              <dd class="trip__item-data trip__item-data--first">000119</dd>
+            </dl>
+            <dl class="trip__item trip__item--date">
+              <dt class="trip__item-label">Дата поездки</dt>
+              <dd class="trip__item-data">22.02.2024 - 27.02.2024</dd>
+            </dl>
+            <dl class="trip__item trip__item--amount">
+              <dt class="trip__item-label">Сумма, план</dt>
+              <dd class="trip__item-data">29 400,00</dd>
+            </dl>
+            <dl class="trip__item">
+              <dt class="trip__item-label">Сумма, факт</dt>
+              <dd class="trip__item-data">29 400,00</dd>
+            </dl>
+            <dl class="trip__item">
+              <dt class="trip__item-label">Город</dt>
+              <dd class="trip__item-data">Москва, Ярославль, Ижевск, Владимир</dd>
+            </dl>
+            <dl class="trip__item trip__item--last">
+              <dt class="trip__item-label">Статус</dt>
+              <dd class="trip__item-data">Документы</dd>
+            </dl>
+          </div>
+          <div class="trip__row">
+            <dl class="trip__item">
+              <dt class="trip__item-label">№ поездки</dt>
+              <dd class="trip__item-data trip__item-data--first">000120</dd>
+            </dl>
+            <dl class="trip__item trip__item--date">
+              <dt class="trip__item-label">Дата поездки</dt>
+              <dd class="trip__item-data">22.02.2024 - 27.02.2024</dd>
+            </dl>
+            <dl class="trip__item trip__item--amount">
+              <dt class="trip__item-label">Сумма, план</dt>
+              <dd class="trip__item-data">29 400,00</dd>
+            </dl>
+            <dl class="trip__item">
+              <dt class="trip__item-label">Сумма, факт</dt>
+              <dd class="trip__item-data">29 400,00</dd>
+            </dl>
+            <dl class="trip__item">
+              <dt class="trip__item-label">Город</dt>
+              <dd class="trip__item-data">Москва, Ярославль, Ижевск, Владимир</dd>
+            </dl>
+            <dl class="trip__item trip__item--last">
+              <dt class="trip__item-label">Статус</dt>
+              <dd class="trip__item-data">Документы</dd>
+            </dl>
+          </div>
+          <div class="trip__row">
+            <dl class="trip__item">
+              <dt class="trip__item-label">№ поездки</dt>
+              <dd class="trip__item-data trip__item-data--first">000133</dd>
+            </dl>
+            <dl class="trip__item trip__item--date">
+              <dt class="trip__item-label">Дата поездки</dt>
+              <dd class="trip__item-data">22.02.2024 - 27.02.2024</dd>
+            </dl>
+            <dl class="trip__item trip__item--amount">
+              <dt class="trip__item-label">Сумма, план</dt>
+              <dd class="trip__item-data">29 400,00</dd>
+            </dl>
+            <dl class="trip__item">
+              <dt class="trip__item-label">Сумма, факт</dt>
+              <dd class="trip__item-data">29 400,00</dd>
+            </dl>
+            <dl class="trip__item">
+              <dt class="trip__item-label">Город</dt>
+              <dd class="trip__item-data">Москва, Ярославль, Ижевск, Владимир</dd>
+            </dl>
+            <dl class="trip__item trip__item--last">
+              <dt class="trip__item-label">Статус</dt>
+              <dd class="trip__item-data">Документы</dd>
+            </dl>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+
+</html>
