@@ -32,8 +32,8 @@
           <div class="filters__wrapper">
             <div class="filters__period">
               <div class="filters__data">
-                <label class="filters__label" for="trip-start-date">Период с:</label>
-                <div class="form__input-wrapper">
+                <label class="filters__label" for="trip-start-date">Период&nbsp;с:</label>
+                <div class="filters__form form">
                   <input type="text" class="form__input form__input--date" id="trip-start-date"
                     placeholder="22.02.2024">
                   <div class="form__input-icons">
@@ -48,18 +48,18 @@
               </div>
               <div class="filters__select-wrap">
                 <label class="filters__label" for="trip-end-date">по:</label>
-                <div class="form__input-wrapper">
-                  <select class="form__select">
+                <div class="filters__form">
+                  <select class="filters__select" id="trip-end-date">
                     <option>Выбрать...</option>
                   </select>
-                  <svg class="form__select-icon" width="16" height="16">
+                  <svg class="filters__select-icon" width="16" height="16">
                     <use xlink:href="images/sprite.svg#icon-calendar"></use>
                   </svg>
                 </div>
               </div>
             </div>
             <div class="filters__search search">
-              <input type="text" class="form__input" placeholder="Поиск...">
+              <input class="search__input"  type="text" placeholder="Поиск...">
               <svg class="search__input-icon" width="16" height="16">
                 <use xlink:href="images/sprite.svg#icon-search"></use>
               </svg>
@@ -73,10 +73,11 @@
             </label>
           </div>
         </section>
-        <section class="trip__wrap">
+        <section class="trip">
+          <h2 class="visually-hidden">Блок поездки.</h2>
           <div class="trip__row">
             <dl class="trip__item">
-              <dt class="trip__item-label">№ поездки</dt>
+              <dt class="trip__item-label">&#8470; поездки</dt>
               <dd class="trip__item-data trip__item-data--first">000115</dd>
             </dl>
             <dl class="trip__item trip__item--date">
@@ -102,7 +103,7 @@
           </div>
           <div class="trip__row">
             <dl class="trip__item">
-              <dt class="trip__item-label">№ поездки</dt>
+              <dt class="trip__item-label">&#8470; поездки</dt>
               <dd class="trip__item-data trip__item-data--first">000117</dd>
             </dl>
             <dl class="trip__item trip__item--date">
@@ -128,7 +129,7 @@
           </div>
           <div class="trip__row">
             <dl class="trip__item">
-              <dt class="trip__item-label">№ поездки</dt>
+              <dt class="trip__item-label">&#8470; поездки</dt>
               <dd class="trip__item-data trip__item-data--first">000074</dd>
             </dl>
             <dl class="trip__item trip__item--date">
@@ -164,7 +165,7 @@
           </div>
           <div class="trip__row">
             <dl class="trip__item">
-              <dt class="trip__item-label">№ поездки</dt>
+              <dt class="trip__item-label">&#8470; поездки</dt>
               <dd class="trip__item-data trip__item-data--first">000115</dd>
             </dl>
             <dl class="trip__item trip__item--date">
@@ -190,7 +191,7 @@
           </div>
           <div class="trip__row">
             <dl class="trip__item">
-              <dt class="trip__item-label">№ поездки</dt>
+              <dt class="trip__item-label">&#8470; поездки</dt>
               <dd class="trip__item-data trip__item-data--first">000211</dd>
             </dl>
             <dl class="trip__item trip__item--date">
@@ -216,7 +217,7 @@
           </div>
           <div class="trip__row">
             <dl class="trip__item">
-              <dt class="trip__item-label">№ поездки</dt>
+              <dt class="trip__item-label">&#8470; поездки</dt>
               <dd class="trip__item-data trip__item-data--first">000118</dd>
             </dl>
             <dl class="trip__item trip__item--date">
@@ -242,7 +243,7 @@
           </div>
           <div class="trip__row">
             <dl class="trip__item">
-              <dt class="trip__item-label">№ поездки</dt>
+              <dt class="trip__item-label">&#8470; поездки</dt>
               <dd class="trip__item-data trip__item-data--first">000119</dd>
             </dl>
             <dl class="trip__item trip__item--date">
@@ -268,7 +269,7 @@
           </div>
           <div class="trip__row">
             <dl class="trip__item">
-              <dt class="trip__item-label">№ поездки</dt>
+              <dt class="trip__item-label">&#8470; поездки</dt>
               <dd class="trip__item-data trip__item-data--first">000120</dd>
             </dl>
             <dl class="trip__item trip__item--date">
@@ -294,7 +295,7 @@
           </div>
           <div class="trip__row">
             <dl class="trip__item">
-              <dt class="trip__item-label">№ поездки</dt>
+              <dt class="trip__item-label">&#8470; поездки</dt>
               <dd class="trip__item-data trip__item-data--first">000133</dd>
             </dl>
             <dl class="trip__item trip__item--date">
